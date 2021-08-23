@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Sessions Suite" thread-count="2"
+	parallel="tests" verbose="4">
+
+	<test name="Measurabl Login">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://app.measurabl.com/sign-in" />
+	
+		<classes>
+			<class name="com.qa.measurabl.LoginPage" />
+		</classes>
+	<test name="Measurabl RegistrationPage ">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://app.measurabl.com/sign-up" />
+		<classes>
+			<class name="com.qa.measurabl.RegistrationPage" />
+		</classes>	
+	</test>
+</suite>
